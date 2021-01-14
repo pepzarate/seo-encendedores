@@ -1,5 +1,6 @@
 :root{
-    --font-titles: 'Lily Script One', cursive;
+    --font-titles: 'Rubik', cursive;
+    --font-text: 'Lato', sans-serif;
 
     --blue: #4163DB;
     --orange:  #fc7a44;
@@ -17,7 +18,7 @@
 
 html{
     font-size: 62.5%;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-text)
 }
 
 /* Utilerias */
@@ -26,36 +27,46 @@ a{
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     font-family: var(--font-titles);
     padding-top: 40px;
 }
 
 h2{
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     font-family: var(--font-titles);
     padding-top: 40px;
 }
 
 h3{
-    font-size: 2.3rem;
+    font-size: 2.8rem;
     font-weight: 400;
     font-family: var(--font-titles);
     padding-top: 40px;
 }
 
-p{
-    font-size: 1.8rem;
+p, li, span{
+    font-size: 2.3rem;
     text-align: justify;
-    line-height: 2.2rem;
+    line-height: 3.5rem;
     padding-top: 20px;
+}
+
+ul{
+    padding-left: 50px;
+}
+
+iframe{
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
 }
 
 .btn{
     padding: 0.75rem 1.25rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 0.5rem 0;
     display: inline-block;
     text-align: center;
@@ -73,9 +84,16 @@ p{
     text-align: center;
 }
 
-.nav-container{
+.header{
     overflow: hidden;
     background-color: var(--orange);
+    
+}
+
+.nav-container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .nav-container a{
@@ -92,7 +110,6 @@ p{
 .logo img{
     width: 100px;
     padding: 0;
-    margin: 0 50px;
 }
 
 .logo{
@@ -212,9 +229,15 @@ p{
 
 .cards-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;    
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;    
     padding-top: 40px;
+}
+
+@media screen and (max-width: 920px){
+    .cards-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -229,40 +252,82 @@ p{
     }
 }
 
-.best-lighters__item--title{
+.card-title{
     text-align: center;
     color: var(--white);
     padding-bottom: 15px;
 }
 
-.best-lighters__item{
+.card-mask{
     width: 100%;
-    height: 60vh;
+    height: 40vh;
     display: flex;
     flex-direction: column-reverse;
 }
 
 .bg1{
     background: url(../img/bg_item1.jpg) center/cover no-repeat;
+    border-radius: 10px;
 }
 
-.best-lighters__item:hover{
+.card-mask:hover{
     background: linear-gradient(to bottom, rgba(0,136,204,0) 0%, rgba(0,136,204,0.6) 100%);
+    border-radius: 10px;
 }
 
 .card{
     width: 100%;
-    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .card img{
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
-.card h3{
+.card p{
     padding: 0;
     color: var(--black);
+    font-weight: 700;
     text-align: center;
+}
+
+.category-img img,
+.category-video iframe{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.two-columns{
+    display: flex;
+    gap: 30px;
+}
+
+@media screen and (max-width: 768px){
+    .two-columns{
+        flex-wrap: wrap;
+    }
+}
+
+.table {
+    overflow: scroll;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 2fr);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    margin: 40px 10px;
+}
+
+.table > div {
+    padding: 8px 4px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
 }

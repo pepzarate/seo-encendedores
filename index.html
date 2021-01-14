@@ -15,7 +15,7 @@
     <!-- Font Lato & Lily Script-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
@@ -25,153 +25,314 @@
 </head>
 <body>
     <!-- Navegación principal -->
-    <div class="nav-container" id="nav-container">
-        <a href="/" class="logo"><img src="./img/logo.png" alt="Logo encendedor"></a>
-        <div class="dropdown-menu">
-            <button class="dropbtn">Modelos <i class="fas fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+    <header class="header">
+        <div class="nav-container" id="nav-container">
+            <a href="/" class="logo"><img src="./img/logo.png" alt="Logo encendedor"></a>
+            <div class="dropdown-menu">
+                <button class="dropbtn">Modelos <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
             </div>
-        </div>
-        <div class="dropdown-menu">
-            <button class="dropbtn">Marcas <i class="fas fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+            <div class="dropdown-menu">
+                <button class="dropbtn">Marcas <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
             </div>
-        </div>
-        <div class="dropdown-menu">
-            <button class="dropbtn">Recetas <i class="fas fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+            <div class="dropdown-menu">
+                <button class="dropbtn">Recetas <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
             </div>
-        </div>
-        <div class="dropdown-menu">
-            <button class="dropbtn">Reseñas <i class="fas fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+            <div class="dropdown-menu">
+                <button class="dropbtn">Reseñas <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
             </div>
-        </div>
-        <div class="dropdown-menu">
-            <button class="dropbtn">Provincias <i class="fas fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+            <div class="dropdown-menu">
+                <button class="dropbtn">Provincias <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
             </div>
+            <a href="/" class="nav-element">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="functionResponsive()"><i class="fas fa-bars"></i></a>
         </div>
-        <a href="/" class="nav-element">Contacto</a>
-        <a href="javascript:void(0);" class="icon" onclick="functionResponsive()"><i class="fas fa-bars"></i></a>
-    </div>
+    </header>
 
     <main class="main-container">
-        <h1>Para los fanaticos de los Encedodores</h1>
+        <h1>Para los fanaticos de los Encendedores</h1>
         <p>Las barbacoas o bbq son más que un utensilio de cocina, las barbacoas son reuniones con amigos, familiares y sonrisas de tardes soleadas, una buena comida y cervezas al sol. Si eres amante del mundo de las barbacoas, esta es tu web.</p>
-        <p>Te mostraremos todos los trucos, modelos y recetas para que tu barbacoa sea la guinda de un día perfecto. </p>
-        <h2>Analisis de los mejores encendedores del 2020</h2>
+
+        <div class="four-cards linear-gradient">
+            <h2>Analisis de los mejores encendedores del 2020</h2>
+            <p>Te mostraremos todos los trucos, modelos y recetas para que tu barbacoa sea la guinda de un día perfecto. </p>
+            <section class="cards-container">
+                <a href="#">
+                    <div class="bg1">
+                        <div class="card-mask">
+                            <p class="card-title">Praesentium maiores natus cumque aut. Architecto!</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="bg1">
+                        <div class="card-mask">
+                            <p class="card-title">Praesentium maiores natus cumque aut. Architecto!</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="bg1">
+                        <div class="card-mask">
+                            <p class="card-title">Praesentium maiores natus cumque aut. Architecto!</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="bg1">
+                        <div class="card-mask">
+                            <p class="card-title">Praesentium maiores natus cumque aut. Architecto!</p>
+                        </div>
+                    </div>
+                </a> 
+                <a href="#">
+                    <div class="bg1">
+                        <div class="card-mask">
+                            <p class="card-title">Praesentium maiores natus cumque aut. Architecto!</p>
+                        </div>
+                    </div>
+                </a> 
+                <a href="#">
+                    <div class="bg1">
+                        <div class="card-mask">
+                            <p class="card-title">Praesentium maiores natus cumque aut. Architecto!</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="bg1">
+                        <div class="card-mask">
+                            <p class="card-title">Praesentium maiores natus cumque aut. Architecto!</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="bg1">
+                        <div class="card-mask">
+                            <p class="card-title">Praesentium maiores natus cumque aut. Architecto!</p>
+                        </div>
+                    </div>
+                </a>
+            </section>
+        </div>
+
+        <div class="amazon-items">
+            <h2>Catálogo de encendedores al mejor precio:</h2>
+            <section class="amazon-items">
+                <p class="text-center">
+                    <a class="btn" href="#" target="_blank" rel="nofollow noopener noreferrer">Ver más OFERTAS en Amazon</a>
+                </p>
+            </section>
+        </div>
+
+        <div class="four-cards img-desc">
+            <h2>¿Cuál es tu encendedor ideal?</h2>
+            <p>Hay infinidad de modelos así que es normal que no sepas qué barbacoa comprar que responda mejor a tus necesidades. En <strong>encendedores.online</strong> las hemos clasificado para que encuentres lo que buscas.</p>
+            <section class="cards-container">
+                <a href="#">
+                    <div class="card">
+                        <img src="./img/bg_item1.jpg" alt="">
+                        <p>Lorem qui vel incidunt facilis, eius atque.</p>
+                    </div>
+                </a> 
+                <a href="#">
+                    <div class="card">
+                        <img src="./img/bg_item1.jpg" alt="">
+                        <p>Lorem qui vel incidunt facilis, eius atque.</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <img src="./img/bg_item1.jpg" alt="">
+                        <p>Lorem qui vel incidunt facilis, eius atque.</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <img src="./img/bg_item1.jpg" alt="">
+                        <p>Lorem qui vel incidunt facilis, eius atque.</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <img src="./img/bg_item1.jpg" alt="">
+                        <p>Lorem qui vel incidunt facilis, eius atque.</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <img src="./img/bg_item1.jpg" alt="">
+                        <p>Lorem qui vel incidunt facilis, eius atque.</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                            <img src="./img/bg_item1.jpg" alt="">
+                            <p>Lorem qui vel incidunt facilis, eius atque.</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                            <img src="./img/bg_item1.jpg" alt="">
+                            <p>Lorem qui vel incidunt facilis, eius atque.</p>
+                    </div>
+                </a>
+            </section>
+        </div>
+
+        <div class="category-img">
+            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum repellat officiis laborum quia ullam esse aut voluptatem, nesciunt doloribus voluptas in ipsa illum quaerat deserunt minima molestiae architecto aperiam.Cupiditate et dolorem repudiandae obcaecati ipsum quaerat dolorum dignissimos delectus libero voluptatibus atque excepturi dolore eveniet debitis placeat quia dolores neque amet aut soluta deserunt, earum tempore quos? Ipsa, modi!</p>
+            <div class="img-container">
+                <img src="./img/bg_item1.jpg" alt="imagen">
+            </div>
+        </div>
         
-        <section class="cards-container">
-            <a href="#">
-                <div class="bg1">
-                    <div class="best-lighters__item">
-                        <h3 class="best-lighters__item--title">Praesentium maiores natus cumque aut. Architecto!</h3>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="bg1">
-                    <div class="best-lighters__item">
-                        <h3 class="best-lighters__item--title">Praesentium maiores natus cumque aut. Architecto!</h3>
-                    </div>
-                </div>
-            </a> <a href="#">
-                <div class="bg1">
-                    <div class="best-lighters__item">
-                        <h3 class="best-lighters__item--title">Praesentium maiores natus cumque aut. Architecto!</h3>
-                    </div>
-                </div>
-            </a> <a href="#">
-                <div class="bg1">
-                    <div class="best-lighters__item">
-                        <h3 class="best-lighters__item--title">Praesentium maiores natus cumque aut. Architecto!</h3>
-                    </div>
-                </div>
-            </a> <a href="#">
-                <div class="bg1">
-                    <div class="best-lighters__item">
-                        <h3 class="best-lighters__item--title">Praesentium maiores natus cumque aut. Architecto!</h3>
-                    </div>
-                </div>
-            </a> <a href="#">
-                <div class="bg1">
-                    <div class="best-lighters__item">
-                        <h3 class="best-lighters__item--title">Praesentium maiores natus cumque aut. Architecto!</h3>
-                    </div>
-                </div>
-            </a>
-        </section>
+        <div class="category-video">
+            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum repellat officiis laborum quia ullam esse aut voluptatem, nesciunt doloribus voluptas in ipsa illum quaerat deserunt minima molestiae architecto aperiam.Cupiditate et dolorem repudiandae obcaecati ipsum quaerat dolorum dignissimos delectus libero voluptatibus atque excepturi dolore eveniet debitis placeat quia dolores neque amet aut soluta deserunt, earum tempore quos? Ipsa, modi!</p>
+            <iframe src="https://www.youtube.com/embed/MuH1seetAfI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-        <h2>Catálogo de encendedores al mejor precio:</h2>
-        <section class="amazon-items">
-            <p class="text-center">
-                <a class="btn" href="https://amzn.to/2RnLMbW" target="_blank" rel="nofollow noopener noreferrer">Ver más OFERTAS en Amazon</a>
-            </p>
-        </section>
+        <div class="text-two-colmuns">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <div class="two-columns">
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ut sit possimus repellat nihil nisi amet incidunt quam labore minima ratione nobis libero, repellendus corrupti nostrum maiores dignissimos nulla! Porro.Cupiditate ducimus nesciunt explicabo placeat possimus eius dolor odio repudiandae beatae itaque exercitationem est saepe nihil, vitae iste vero, iusto facilis, animi minima ratione? Possimus hic aspernatur placeat nulla rem.
+                    </p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo optio autem similique. Quis dolor corporis fuga vel assumenda temporibus perferendis dolore velit natus! Neque maiores adipisci enim aliquid nobis similique?Omnis saepe ipsam placeat, illum similique aut molestias quam in accusamus laborum id, ipsum excepturi accusantium quo tempore asperiores iste facere sequi cupiditate aliquid. Porro eius vitae quod a quas?
+                    </p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-        <h2>¿Cuál es tu encendedor ideal?</h2>
-        <p>Hay infinidad de modelos así que es normal que no sepas qué barbacoa comprar que responda mejor a tus necesidades. En <strong>encendedores.online</strong> las hemos clasificado para que encuentres lo que buscas.</p>
-        <section class="cards-container">
-            <div class="card">
-                <a href="#">
+        <div class="three-cards img-desc">
+            <section class="cards-container">
+                <div class="card">
                     <img src="./img/bg_item1.jpg" alt="">
-                    <h3>Lorem qui vel incidunt facilis, eius atque.</h3>
-                </a>    
-            </div>
-            <div class="card">
-                <a href="#">
+                    <p>Lorem qui vel incidunt facilis, eius atque.</p>
+                    <a class="btn" href="#" target="_blank" rel="nofollow noopener noreferrer">Comprar</a>
+                </div>
+                <div class="card">
                     <img src="./img/bg_item1.jpg" alt="">
-                    <h3>Lorem qui vel incidunt facilis, eius atque.</h3>
-                </a>    
-            </div>
-            <div class="card">
-                <a href="#">
+                    <p>Lorem qui vel incidunt facilis, eius atque.</p>
+                    <a class="btn" href="#" target="_blank" rel="nofollow noopener noreferrer">Comprar</a>
+                </div>
+                <div class="card">
                     <img src="./img/bg_item1.jpg" alt="">
-                    <h3>Lorem qui vel incidunt facilis, eius atque.</h3>
-                </a>    
-            </div>
-            <div class="card">
-                <a href="#">
+                    <p>Lorem qui vel incidunt facilis, eius atque.</p>
+                    <a class="btn" href="#" target="_blank" rel="nofollow noopener noreferrer">Comprar</a>
+                </div>
+                <div class="card">
                     <img src="./img/bg_item1.jpg" alt="">
-                    <h3>Lorem qui vel incidunt facilis, eius atque.</h3>
-                </a>    
-            </div>
-            <div class="card">
-                <a href="#">
+                    <p>Lorem qui vel incidunt facilis, eius atque.</p>
+                    <a class="btn" href="#" target="_blank" rel="nofollow noopener noreferrer">Comprar</a>
+                </div>
+                <div class="card">
                     <img src="./img/bg_item1.jpg" alt="">
-                    <h3>Lorem qui vel incidunt facilis, eius atque.</h3>
-                </a>    
-            </div>
-            <div class="card">
-                <a href="#">
+                    <p>Lorem qui vel incidunt facilis, eius atque.</p>
+                    <a class="btn" href="#" target="_blank" rel="nofollow noopener noreferrer">Comprar</a>
+                </div>
+                <div class="card">
                     <img src="./img/bg_item1.jpg" alt="">
-                    <h3>Lorem qui vel incidunt facilis, eius atque.</h3>
-                </a>    
-            </div>
-        </section>
+                    <p>Lorem qui vel incidunt facilis, eius atque.</p>
+                    <a class="btn" href="#" target="_blank" rel="nofollow noopener noreferrer">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="./img/bg_item1.jpg" alt="">
+                    <p>Lorem qui vel incidunt facilis, eius atque.</p>
+                    <a class="btn" href="#" target="_blank" rel="nofollow noopener noreferrer">Comprar</a>
+                </div><div class="card">
+                    <img src="./img/bg_item1.jpg" alt="">
+                    <p>Lorem qui vel incidunt facilis, eius atque.</p>
+                    <a class="btn" href="#" target="_blank" rel="nofollow noopener noreferrer">Comprar</a>
+                </div>
+            </section>
+        </div>
 
-        
+        <div class="table">
+            <div class="border-full">
+            </div>
+            <div>
+                <p><strong>Item 1</strong></p>
+            </div>
+            <div>
+                <p><strong>Item 1</strong></p>
+            </div>
+            <div>
+                <p><strong>Item 1</strong></p>
+            </div>
+            <div>
+                <p><strong>Item 1</strong></p>
+            </div>
+
+            <div><p><strong>Lorem</strong></p></div>
+            <div><p>Lorem ipsum dolor</p></div>
+            <div><p>Lorem ipsum dolor</p></div>
+            <div><p>Lorem ipsum dolor</p></div>
+            <div><p>Lorem ipsum dolor </p></div>
+
+            <div><p><strong>Lorem</strong></p></div>
+            <div><p>Lorem ipsum dolor</p></div>
+            <div><p>Lorem ipsum dolor</p></div>
+            <div><p>Lorem ipsum dolor</p></div>
+            <div><p>Lorem ipsum dolor </p></div>
+
+            <div><p><strong>Lorem</strong></p></div>
+            <div><p>Lorem ipsum dolor</p></div>
+            <div><p>Lorem ipsum dolor</p></div>
+            <div><p>Lorem ipsum dolor</p></div>
+            <div><p>Lorem ipsum dolor </p></div>
+
+            <div></div>
+            <div><p class="text-center"><a class="btn" href="#" target="_blank" rel="nofollow noopener noreferrer">Comprar</a></p></div>
+            <div><p class="text-center"><a class="btn" href="#" target="_blank" rel="nofollow noopener noreferrer">Comprar</a></p></div>
+            <div><p class="text-center"><a class="btn" href="#" target="_blank" rel="nofollow noopener noreferrer">Comprar</a></p></div>
+            <div><p class="text-center"><a class="btn" href="#" target="_blank" rel="nofollow noopener noreferrer">Comprar</a></p></div>
+        </div>
     </main>
     
     <script src="./js/script.js"></script>
