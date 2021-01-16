@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: https://infofreidorasdeaire.com/contacto.html
+
+Sitemap: https://infofreidorasdeaire.com/sitemap.xml
