@@ -254,7 +254,7 @@ iframe{
 
 .card-title{
     text-align: center;
-    color: var(--white);
+    color: var(--black);
     padding-bottom: 15px;
 }
 
@@ -275,7 +275,7 @@ iframe{
 .img-card-container h3{
     position: absolute;
     bottom: 5px;
-    color: white;
+    color: black;
 }
 
 .img-card-container a:after{
